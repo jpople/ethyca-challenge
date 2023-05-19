@@ -1,3 +1,17 @@
+export interface SystemInfo {
+    name: string;
+    system_type: string;
+    description: string;
+    fides_key: string;
+    privacy_declarations: {
+        data_categories: string[];
+        data_subjects: string[];
+        data_use: string;
+        name: string;
+    }[];
+    system_dependencies: string[];
+}
+
 const data = [
     {
        "description" : "Storefront application to search for products, browse sales and promotions, review product information, etc.",

@@ -1,12 +1,10 @@
 import { Col } from 'react-bootstrap';
 import SystemCard from './SystemCard';
+import { SystemInfo } from './assets/sampleData';
 
 interface ColProps {
     systemType: string;
-    data: {
-        name: string;
-        system_type: string;
-    }[];
+    data: SystemInfo[];
 }
 
 export default function SystemColumn ({systemType, data}: ColProps) {
@@ -15,7 +13,7 @@ export default function SystemColumn ({systemType, data}: ColProps) {
     return <Col className='d-flex flex-column align-items-center mb-4'>
         <h1>{pluralizedHeading}</h1>
         <div className='d-flex flex-column align-items-center' style={{width: '100%'}}>
-            {filteredData.map((item, index) => <SystemCard system={item.name} key={index}/>)}
+            {filteredData.map((item, index) => <SystemCard system={item} key={index}/>)}
         </div>
     </Col>
 }

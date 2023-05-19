@@ -6,7 +6,7 @@ import sampleData from './assets/sampleData';
 import SystemColumn from './SystemColumn';
 
 function App() {
-  const columnNames = ["Application", "Service", "Database", "Integration"]; // can fill this programmatically at some point
+  const columnNames = ["Application", "Service", "Database", "Integration"]; // hardcoding this for now, but maybe should be filled programmatically if there are other system types we could care about in the future?
 
   return (
     <Container fluid>
