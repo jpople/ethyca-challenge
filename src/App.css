@@ -1,5 +1,12 @@
 #root {
+  font-family: Barlow;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+code {
+  font-family: 'Source Code Pro'!important;
+  font-weight:600;
+  color:#006633!important;
 }
