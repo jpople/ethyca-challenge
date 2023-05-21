@@ -53,9 +53,8 @@ function App() {
     <Container fluid>
       <Row style={{textAlign: 'center'}}>
         <h1>Records of Processing Activities</h1>
-        {/* TODO: update text with links and stuff */}
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          Check out the source code for this project on my GitHub <a href="https://github.com/jpople/ethyca-challenge" target="_blank" rel="noreferrer noopener">here</a>!
         </p>
       </Row>
       <FilterInterface 
