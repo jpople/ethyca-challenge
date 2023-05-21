@@ -29,13 +29,15 @@ function SystemCard({ system }: CardProps) {
         <Card.Body>
             <Card.Title>{system.name}</Card.Title>
             <Card.Subtitle style={{color: 'gray'}}>{system.fides_key}</Card.Subtitle>
-            <Card.Text>{system.description}</Card.Text>
-            <ListGroup>
-                {parseCategories(system).map((category, idx) => {
-                    return <ListGroupItem key={idx}><code>{category}</code></ListGroupItem>
-                })}
-            </ListGroup>
-
+            <Card.Text className="mt-1">{system.description}</Card.Text>
+            {parseCategories(system).length > 0 && <>
+                <h6>Data collected:</h6>
+                <ListGroup>
+                    {parseCategories(system).map((category, idx) => {
+                        return <ListGroupItem key={idx}><code>{category}</code></ListGroupItem>
+                    })}
+                </ListGroup>
+            </>}
         </Card.Body>
     </Card>;
 }
